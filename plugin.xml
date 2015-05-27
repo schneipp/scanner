@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.moovaa.plugins.scanner"
+      version="0.3.6">
+  <name>Moovaa Scanner</name>
+  <description>Moovaa Scanner Plugin</description>
+  <license>Closed Source</license>
+  <keywords>phonegap,moovaa</keywords>
+
+
+  <js-module src="www/js/scanner.js" name="Scanner">
+    <clobbers target="window.scanner" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Scanner">
+        <param name="android-package" value="com.moovaa.plugins.scanner"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/customCamera/src/main/java/com/moovaa/plugins/scanner/MoovaaScanner.java" target-dir="src/com/moovaa/plugins/scanner" />
+  </platform>
+</plugin>

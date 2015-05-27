@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.moovaa.plugins.scanner.MoovaaScanVideo">
+
+
+
+    <SurfaceView
+        android:scrollbars="none"
+        android:clickable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fitsSystemWindows="true"
+        android:layout_above="@+id/progressBar"
+        android:id="@+id/surfaceViewScanLine"
+        />
+
+    <SurfaceView
+        android:scrollbars="none"
+        android:clickable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/surfaceView"
+        android:layout_above="@+id/progressBar"
+        />
+
+
+    <com.moovaa.plugins.scanner.AnimatedView
+        android:id="@+id/anim_view"
+        android:scrollbars="none"
+        android:clickable="false"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fitsSystemWindows="true"
+        android:layout_above="@+id/progressBar"
+        android:layout_width="fill_parent"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Beenden"
+        android:id="@+id/buttonStopScan"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:layout_alignBottom="@+id/surfaceView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="22dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminateOnly="true"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDuration="@android:integer/config_longAnimTime" />
+</RelativeLayout>

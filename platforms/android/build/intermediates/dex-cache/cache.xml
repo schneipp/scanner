@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\rams\Desktop\android\customCamera\build\intermediates\exploded-aar\android\customCameraCordovaLib\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="67b34314f47ae46ac065bfda20eec1480bc7598d">
+        <dex dex="C:\Users\rams\Desktop\android\customCamera\build\intermediates\pre-dexed\debug\classes-9578bd10de136df3e8b2fc669c9d2551c4e85d36.jar" />
+    </item>
+    <item
+        jar="C:\android-ndk-r8d\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\rams\Desktop\android\customCamera\build\intermediates\pre-dexed\debug\support-v4-19.1.0-206abc4cc9f9b72805594c5961c0fd6c85a42808.jar" />
+    </item>
+
+</items>
